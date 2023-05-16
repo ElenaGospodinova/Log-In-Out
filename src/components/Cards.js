@@ -141,7 +141,7 @@ const CardsMain = () => {
             </div>
             <div>
             </div>
-            <button className="btns"><Link to="/LogOut">LogOut</Link></button>
+            <button className="btns"><Link to="/LogOut" className="logout">LogOut</Link></button>
         </div>
     </>
 }
