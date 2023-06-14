@@ -1,4 +1,4 @@
-form{
+form {
   background-image: url('../img/red-black.jpg');
   box-shadow: 10px 10px 7px 12px rgb(238, 9, 55);
   /* opacity: 0.6; */
@@ -9,11 +9,13 @@ form{
   color: #fff;
   border-radius: 10%;
 }
-label{
+
+label {
   font-size: 1.7rem;
   letter-spacing: 2px;
 }
-* input {
+
+input {
   height: 35px;
   color: rgb(19, 18, 18);
   font-size: 2rem;
@@ -43,7 +45,6 @@ input[type="submit"]:hover {
 }
 
 .login-form {
-  
   background-color: rgb(218, 215, 215);
   padding: 2rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -69,6 +70,50 @@ input[type="submit"]:hover {
   gap: 8px;
   margin: 10px;
 }
+
+/* Responsive styles */
+@media (max-width: 480px) {
+  form {
+    margin: 80px 30px;
+    width: 90vw;
+    height: auto;
+    padding: 30px;
+  }
+  
+  input {
+    font-size: 1.3rem;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  form {
+    margin: 100px 50px;
+    width: 80vw;
+    height: auto;
+    padding: 40px;
+  }
+  
+  input {
+    font-size: 1.5rem;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 1024px) {
+  form {
+    margin: 100px 100px;
+    width: 60vw;
+    height: auto;
+    padding: 50px;
+  }
+  
+  input {
+    font-size: 1.8rem;
+    padding: 18px;
+  }
+}
+
 
 
 /* form{
