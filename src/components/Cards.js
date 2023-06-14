@@ -1,4 +1,4 @@
-import { Link, useMatch, useResolvedPath } from "react-router-dom"
+import { Link } from "react-router-dom"
 import  cardsP  from "../img/purple.jpg";
 import cardsPink from "../img/backround.jpeg";
 import colorsPlay from "../img/colorsPlay.jpeg";
