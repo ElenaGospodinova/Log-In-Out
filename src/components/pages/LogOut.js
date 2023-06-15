@@ -1,6 +1,6 @@
 import React from "react";
 import "../../styles/LogOut.css";
-import { Link, useMatch, useResolvedPath } from "react-router-dom";
+import { Link  } from "react-router-dom";
 
 const LogOut = () => {
     return  <> 
