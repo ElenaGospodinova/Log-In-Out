@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Form from 'react-bootstrap/Form';
-import CardsMain from '../Cards'; 
+import CardsMain from '../Cards';
 import "../../styles/LogIn.css";
 import { red } from '@mui/material/colors';
 
@@ -20,13 +21,13 @@ const LogIn = () => {
 
   const errors = {
     email: {
-      color:red,
+      color: red,
       required: true,
       message: 'Email is required',
       pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/
     },
     password: {
-      color:red,
+      color: red,
       required: true,
       message: 'Password is required',
       min: 8
@@ -69,7 +70,7 @@ const LogIn = () => {
       // if is valid, proceed with login
       setIsSubmitted(true);
       alert("Welcome to Your Music World!");
-      
+
     }
   };
 
@@ -89,25 +90,25 @@ const LogIn = () => {
             value={formValues.email}
             onChange={handleInputChange}
             isInvalid={formErrors.email}
-       
+
           />
-          <Form.Control.Feedback type="invalid" style={{color:'red', fontSize:'1.3rem'}}>
+          <Form.Control.Feedback type="invalid" style={{ color: 'red', fontSize: '1.3rem' }}>
             {formErrors.email}
           </Form.Control.Feedback>
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formBasicPassword">
           <Form.Label>Password</Form.Label>
-          <Form.Control 
+          <Form.Control
             type="password"
             placeholder="Password"
             name="password"
             value={formValues.password}
             onChange={handleInputChange}
             isInvalid={formErrors.password}
-       
+
           />
-          <Form.Control.Feedback type="invalid" style={{color:'red', fontSize:'1.3rem'}}>
+          <Form.Control.Feedback type="invalid" style={{ color: 'red', fontSize: '1.3rem' }}>
             {formErrors.password}
           </Form.Control.Feedback>
         </Form.Group>
@@ -116,11 +117,11 @@ const LogIn = () => {
           LogIn
         </Button>
       </Form>
+
+      {/* Embedded video */}
+    
     </>
   );
 };
 
 export default LogIn;
-
-
-
