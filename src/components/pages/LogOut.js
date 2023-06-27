@@ -20,8 +20,10 @@ const LogOut = () => {
         </div>
       </div>
     </>
-  );
-};
 
-export default LogOut;
+      );
+    
+  };
+  
+  export default LogOut;
 
