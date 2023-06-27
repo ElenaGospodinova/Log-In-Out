@@ -13,7 +13,7 @@ export default function Navbar() {
     <nav className="nav">
       <Link to="/" className="site-title">
       
-      <img src={elly} alt='My Logo' style={{ margin:'30px', width: '50px', height: '50px', borderRadius:'12px'}} className='logo' />
+      <img src={elly} alt='My Logo' style={{ margin:'30px', width: '60px', height: '60px', borderRadius:'12px'}} className='logo' />
       Your Music World
       </Link>
       <div className={`menu-toggle ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>

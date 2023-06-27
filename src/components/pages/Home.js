@@ -50,7 +50,7 @@ export default function Home() {
                 <h2 className="card_title">ARMIN VAN BUUREN</h2>
                 <p className="card_text">
                 A State of Trance 2023 (Mixed by Armin van Buuren) [OUT NOW]
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/your_video_id" title="DJ Tarkan - Organic & Progressive House 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/your_video_id" title="DJ Tarkan - Organic & Progressive House 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
                 </p>
                 <button className="btns card_btn">Play</button>
               </div>

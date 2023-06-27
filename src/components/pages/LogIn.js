@@ -3,6 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import CardsMain from '../Cards'; 
 import "../../styles/LogIn.css";
+import { red } from '@mui/material/colors';
 
 const LogIn = () => {
   const [formValues, setFormValues] = useState({
@@ -19,11 +20,13 @@ const LogIn = () => {
 
   const errors = {
     email: {
+      color:red,
       required: true,
       message: 'Email is required',
       pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/
     },
     password: {
+      color:red,
       required: true,
       message: 'Password is required',
       min: 8
@@ -78,7 +81,7 @@ const LogIn = () => {
     <>
       <Form onSubmit={handleSubmit}>
         <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label>Email address</Form.Label>
+          <Form.Label> Email address</Form.Label>
           <Form.Control
             type="email"
             placeholder="Enter email"
@@ -86,23 +89,25 @@ const LogIn = () => {
             value={formValues.email}
             onChange={handleInputChange}
             isInvalid={formErrors.email}
+       
           />
-          <Form.Control.Feedback type="invalid">
+          <Form.Control.Feedback type="invalid" style={{color:'red', fontSize:'1.3rem'}}>
             {formErrors.email}
           </Form.Control.Feedback>
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formBasicPassword">
           <Form.Label>Password</Form.Label>
-          <Form.Control
+          <Form.Control 
             type="password"
             placeholder="Password"
             name="password"
             value={formValues.password}
             onChange={handleInputChange}
             isInvalid={formErrors.password}
+       
           />
-          <Form.Control.Feedback type="invalid">
+          <Form.Control.Feedback type="invalid" style={{color:'red', fontSize:'1.3rem'}}>
             {formErrors.password}
           </Form.Control.Feedback>
         </Form.Group>
