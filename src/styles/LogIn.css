@@ -1,19 +1,21 @@
-form{
+form {
   background-image: url('../img/red-black.jpg');
   box-shadow: 10px 10px 7px 12px rgb(238, 9, 55);
-  /* opacity: 0.6; */
-  margin: 300px 950px;
-  width: 25vw;
-  height: 37vh;
-  padding: 60px;
+  margin: 10% auto;
+  width: 80vw;
+  max-width: 400px;
+  height: auto;
+  padding: 3rem;
   color: #fff;
   border-radius: 10%;
 }
-label{
+
+label {
   font-size: 1.7rem;
   letter-spacing: 2px;
 }
-* input {
+
+input {
   height: 35px;
   color: rgb(19, 18, 18);
   font-size: 2rem;
@@ -43,7 +45,6 @@ input[type="submit"]:hover {
 }
 
 .login-form {
-  
   background-color: rgb(218, 215, 215);
   padding: 2rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -70,58 +71,37 @@ input[type="submit"]:hover {
   margin: 10px;
 }
 
+/* Responsive Styles */
 
-/* form{
-  background-color: rgb(51, 82, 82);
-  opacity: 0.6;
-  margin: 300px 950px;
-  width: 25%;
-  height: 54%;
-  padding: 66px;
-  border-radius: 10%;
- 
+@media screen and (max-width: 768px) {
+  form {
+    margin: 20% auto;
+    width: 70vw;
+  }
 }
 
- label{
-  
-  font-size: 2rem;
-  width: 20vw;
-  display: grid;
-  padding: 25px;
-  margin-left: 60px;
-  color: rgb(246, 241, 240);
+@media screen and (max-width: 480px) {
+  form {
+    margin: 30% auto;
+    width: 90vw;
+  }
+
+  label {
+    font-size: 1.4rem;
+  }
+
+  input {
+    font-size: 1.5rem;
+    padding: 12px;
+    margin: 10px;
+  }
+
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input[type="submit"] {
+    margin-top: 20px;
+  }
 }
-.input{
-  width: 10%;
-  height: 15%;
-  margin: 18px 94px;
-  border-radius: 19px;
-  border: none;
-  font-size: 2rem;
-  color: rgb(9, 9, 0);
-  padding: 14px;
-}
-input:hover{
-  border: 3px solid crimson;
-}
-.btns{
-  opacity: 1.3;
-  z-index: 1;
-  padding: 12px;
-  margin: 35px;
-  width: 22%;
-  height: 10%;
-  border-radius: 12px;
-  font-size: 1.6rem;
-  border:none;
-  cursor: pointer;
-  color: white;
-  font-weight: bold;
-  background-color: rgb(116, 91, 96);
-}
-.btns:hover{
-  border: 3px solid rgb(234, 16, 16);
-  background-color: #011926;
-  color: whitesmoke;
-  transform:scale(23px);
-} */

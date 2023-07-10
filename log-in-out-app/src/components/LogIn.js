@@ -1,19 +1,21 @@
-import React from 'react';
-import { useState } from 'react';
+import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { logIn } from '../actions';
+import CardsMain from './Cards';
+import "./styles/LogIn.css";
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import CardsMain from '../Cards';
-import '../../styles/LogIn.css';
 
 const LogIn = () => {
+  const dispatch = useDispatch();
   const [formValues, setFormValues] = useState({
     email: '',
-    password: '',
+    password: ''
   });
 
   const [formErrors, setFormErrors] = useState({
     email: '',
-    password: '',
+    password: ''
   });
 
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -22,13 +24,13 @@ const LogIn = () => {
     email: {
       required: true,
       message: 'Email is required',
-      pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+      pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/
     },
     password: {
       required: true,
       message: 'Password is required',
-      min: 8,
-    },
+      min: 8
+    }
   };
 
   const handleInputChange = (event) => {
@@ -59,15 +61,15 @@ const LogIn = () => {
       newFormErrors[key] = fieldErrors.join(', ');
     });
 
-    setFormErrors(newFormErrors);
-
     const hasErrors = Object.values(newFormErrors).some((error) => error);
 
     if (!hasErrors) {
-      // if is valid, proceed with login
+      dispatch(logIn(formValues.email)); // Dispatch the login action with the email
       setIsSubmitted(true);
       alert('Welcome to Your Music World!');
     }
+
+    setFormErrors(newFormErrors);
   };
 
   if (isSubmitted) {
@@ -107,11 +109,9 @@ const LogIn = () => {
           </Form.Control.Feedback>
         </Form.Group>
 
-        <div className="button-container">
-          <Button variant="primary" type="submit" className="btns">
-            LogIn
-          </Button>
-        </div>
+        <Button variant="primary" type="submit" className='btns'>
+          LogIn
+        </Button>
       </Form>
     </>
   );

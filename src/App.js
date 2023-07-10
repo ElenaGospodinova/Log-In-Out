@@ -4,7 +4,7 @@ import { Route, Routes } from "react-router-dom"
 import LogIn from "./components/pages/LogIn";
 import "./styles/LogIn.css";
 import LogOut from './components/pages/LogOut';
-
+import Footer from "./components/Footer";
 
 function App() {
     return (
@@ -19,6 +19,7 @@ function App() {
           <Route path="/LogOut" element={<LogOut />} />
         </Routes>
         </div>
+        <Footer/>
       </>
     );
   }
