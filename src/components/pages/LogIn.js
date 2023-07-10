@@ -1,9 +1,11 @@
 import React from 'react';
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Form from 'react-bootstrap/Form';
 import CardsMain from '../Cards';
 import '../../styles/LogIn.css';
+
 
 const LogIn = () => {
   const [formValues, setFormValues] = useState({
@@ -20,11 +22,13 @@ const LogIn = () => {
 
   const errors = {
     email: {
+      color: '#FF0000',
       required: true,
       message: 'Email is required',
       pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
     },
     password: {
+      color: '#FF0000',
       required: true,
       message: 'Password is required',
       min: 8,
@@ -67,6 +71,7 @@ const LogIn = () => {
       // if is valid, proceed with login
       setIsSubmitted(true);
       alert('Welcome to Your Music World!');
+
     }
   };
 
@@ -78,9 +83,9 @@ const LogIn = () => {
     <>
     <h2 className="text">LogIn and Enjoy Your Play List</h2>
       <Form onSubmit={handleSubmit}>
-        <Form.Group className="mb-3" controlId="formBasicEmail">
-        
+        <Form.Group className="mb-3" controlId="formBasicEmail">        
           <Form.Label>Email address</Form.Label>
+
           <Form.Control
             type="email"
             placeholder="Enter email"
@@ -88,8 +93,9 @@ const LogIn = () => {
             value={formValues.email}
             onChange={handleInputChange}
             isInvalid={formErrors.email}
+
           />
-          <Form.Control.Feedback type="invalid">
+          <Form.Control.Feedback type="invalid" style={{ color: 'red', fontSize: '1.3rem' }}>
             {formErrors.email}
           </Form.Control.Feedback>
         </Form.Group>
@@ -103,8 +109,9 @@ const LogIn = () => {
             value={formValues.password}
             onChange={handleInputChange}
             isInvalid={formErrors.password}
+
           />
-          <Form.Control.Feedback type="invalid">
+          <Form.Control.Feedback type="invalid" style={{ color: 'red', fontSize: '1.3rem' }}>
             {formErrors.password}
           </Form.Control.Feedback>
         </Form.Group>
@@ -115,6 +122,9 @@ const LogIn = () => {
           </Button>
         </div>
       </Form>
+
+      {/* Embedded video */}
+    
     </>
   );
 };

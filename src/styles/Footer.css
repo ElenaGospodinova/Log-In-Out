@@ -14,6 +14,7 @@
 
 a {
     text-decoration: none;
+    color: rgb(192, 215, 235);
 }
 
 @media (max-width: 576px) and (min-width: 374px) {

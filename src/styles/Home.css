@@ -29,9 +29,9 @@ img {
     padding: 12px;
     margin: 35px;
     width: 42%;
-    height: 24%;
+    height: 26%;
     border-radius: 12px;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     border:none;
     cursor: pointer;
     color: white;
@@ -66,13 +66,13 @@ img {
   }
   
   @media (min-width: 40rem) {
-    .cards_item {
+    .cards-item {
       width: 50%;
     }
   }
   
   @media (min-width: 56rem) {
-    .cards_item {
+    .cards-item {
       width: 33.3333%;
     }
   }
