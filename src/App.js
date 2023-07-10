@@ -18,7 +18,7 @@ function App() {
           <Route path="/LogIn" element={<LogIn />} />
           <Route path="/LogOut" element={<LogOut />} />
         </Routes>
-        </div>
+        </div> 
         <Footer/>
       </>
     );

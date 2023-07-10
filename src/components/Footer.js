@@ -5,15 +5,17 @@ import EGospodinova from '../img/elly.jpg';
 
 export default function App() {
   return (
-    <MDBFooter  className='text-center text-lg-left'>
+    <MDBFooter  className='text-center text-lg-left' style={{ marginTop: '25em' }}>
       <div className='logo'>
           
       </div>
-      <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
+      <div className='text-center p-3' >
       <img src={EGospodinova} alt='My Logo' className='logo'/>
+      <br/>
         &copy; {new Date().getFullYear()} Copyright:{' '}
-        <a className='text-dark' href='https://mdbootstrap.com/'>
-          MDBootstrap.com
+        <br/>
+        <a  href='https://your-travel-app.netlify.app/'>
+          Your Music App
         </a>
       </div>
     </MDBFooter>

@@ -5,8 +5,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 2rem;
-  padding: 0 3rem;
+  gap: 3rem;
+  padding: 0 4rem;
 }
 
 .site-title {
@@ -35,10 +35,12 @@
 .nav li.active {
   background-color: #8c0815;
   border-radius: 12px;
+  padding: 0.4em;
 }
 
 .nav li:hover {
-  background-color: #777;
+  border-radius: 12px;
+  background-color: rgb(130, 3, 3);
 }
 
 /* Media Queries for responsiveness */

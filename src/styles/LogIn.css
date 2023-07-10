@@ -2,8 +2,8 @@ form {
   background-image: url('../img/red-black.jpg');
   box-shadow: 10px 10px 7px 12px rgb(238, 9, 55);
   margin: 10% auto;
-  width: 80vw;
-  max-width: 400px;
+  width: 90vw;
+  max-width: 500px;
   height: auto;
   padding: 3rem;
   color: #fff;
@@ -83,7 +83,7 @@ input[type="submit"]:hover {
 @media screen and (max-width: 480px) {
   form {
     margin: 30% auto;
-    width: 90vw;
+    width: 80vw;
   }
 
   label {
@@ -92,13 +92,14 @@ input[type="submit"]:hover {
 
   input {
     font-size: 1.5rem;
-    padding: 12px;
+    width: 60vw;
     margin: 10px;
   }
 
   .button-container {
     flex-direction: column;
     align-items: center;
+    width: 70vw;
   }
 
   input[type="submit"] {
