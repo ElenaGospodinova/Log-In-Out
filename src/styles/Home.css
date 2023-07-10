@@ -66,13 +66,13 @@ img {
   }
   
   @media (min-width: 40rem) {
-    .cards_item {
+    .cards-item {
       width: 50%;
     }
   }
   
   @media (min-width: 56rem) {
-    .cards_item {
+    .cards-item {
       width: 33.3333%;
     }
   }
