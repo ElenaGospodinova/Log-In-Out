@@ -1,5 +1,4 @@
-/* html, body {
-  height: 100%;
+body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -11,18 +10,4 @@
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-} */
-html,body{
-  margin: 0;
-  padding: 0;
-  background-image: url("./img/red-black.jpg");
-  background-position: cover;
-  background-repeat: no-repeat;
-  position: fixed;
-  height: 100vh;
-  width: 100vw;
-  left: 0;
-  object-fit: cover;
-  text-align: center;
-  overflow-y: auto;
 }

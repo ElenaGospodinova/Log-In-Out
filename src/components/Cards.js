@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import cardsP from "../img/purple.jpg";
+import { Link } from "react-router-dom"
+import  cardsP  from "../img/purple.jpg";
 import cardsPink from "../img/backround.jpeg";
 import colorsPlay from "../img/colorsPlay.jpeg";
 import circles from "../img/circles.jpeg";
